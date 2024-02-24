@@ -110,12 +110,14 @@ export default function CardPoints() {
           <Matchstick15 points={player_2.points} />
         </div>
       </div>
-      <button
-        className="border-2 border-primary rounded px-4 pt-2 absolute font-bold uppercase bottom-5"
-        onClick={handleRemoveAllPoints}
-      >
-        Borrar todo
-      </button>
+      <div className="fixed bottom-0 bg-primary px-8 py-3 rounded-t-full ">
+        <button
+          className=" text-secondary rounded px-4 pt-2 font-bold uppercase "
+          onClick={handleRemoveAllPoints}
+        >
+          borrar
+        </button>
+      </div>
     </>
   );
 }

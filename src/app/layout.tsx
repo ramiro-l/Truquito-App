@@ -3,6 +3,12 @@ import "../styles/globals.css";
 
 const font = Grandstander({ subsets: ["latin"] });
 
+/* import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  
+}; */
+
 export default function RootLayout({
   children,
 }: Readonly<{
