@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Truquito App
 
-## Getting Started
+This project is a points counter for the Truco Game, developed using Next.js. It allows keeping track of points for two players or more as the game progresses.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Points Counter:** Records and displays the points for two players.
+- **Data Persistence:** Uses `localStorage` to store players' points, allowing the data to persist even after closing and reopening the application. ( work in progress )
+
+## Installation
+
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+1. Clone this repository:
+``` bash
+   git clone https://github.com/ramiro-l/truquito-app.git 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
+``` bash
+   cd truquito-app 
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install dependencies:
+``` bash
+   pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Start the application:
+``` bash
+   pnpm run dev 
+```
 
-## Learn More
+5. The application will be available at [localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Work in progress ..
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributions
+Contributions are welcome. If you find a bug or have an enhancement, feel free to open an issue or submit a pull request.
