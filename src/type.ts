@@ -25,6 +25,6 @@ export interface action {
 }
 
 export enum info_action {
-    max_remember = 10
+    max_remember = 30
 };
 
