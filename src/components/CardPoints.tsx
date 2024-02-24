@@ -231,12 +231,17 @@ export default function CardPoints() {
         >
           <ul className="py-2 text-sm">
             <li>
+              <button className="py-1 pt-[10px] block text-center uppercase text-xl rounded-3xl m-2 w-[125px] hover:bg-secondary hover:text-primary">
+                Compartir
+              </button>
+            </li>
+            <li>
               <button
                 onClick={() => {
                   handleRemoveAllPoints();
                   setMenu(!menu);
                 }}
-                className="py-1 pt-[8px] block text-center uppercase text-xl rounded-3xl m-2 w-[100px] hover:bg-secondary hover:text-primary"
+                className="py-1 pt-[10px] block text-center uppercase text-xl rounded-3xl m-2 w-[125px] hover:bg-secondary hover:text-primary"
               >
                 Reiniciar
               </button>
@@ -247,7 +252,7 @@ export default function CardPoints() {
                 onClick={() => {
                   setMenu(!menu);
                 }}
-                className="py-1 pt-[8px] block text-center uppercase text-xl rounded-3xl m-2 w-[100px] hover:bg-secondary hover:text-primary"
+                className="py-1 pt-[10px] block text-center uppercase text-xl rounded-3xl m-2 w-[125px] hover:bg-secondary hover:text-primary"
               >
                 salir
               </Link>
