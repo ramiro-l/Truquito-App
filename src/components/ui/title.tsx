@@ -7,8 +7,8 @@ export default function Title({
 }) {
   return (
     <>
-      <h1 className="text-[5.5rem] font-bold uppercase">{title}</h1>
-      <h4 className="text-[2.21rem] font-bold uppercase -mt-8">{subtitle}</h4>
+      <h1 className="text-[22vw] font-bold uppercase">{title}</h1>
+      <h4 className="text-[8vw]  font-bold uppercase -mt-8">{subtitle}</h4>
     </>
   );
 }

@@ -1,8 +1,9 @@
 {
-    "title": "Truquito | Contador de puntos",
-    "description": "Un contador de puntos para jugar rápido un truquito.",
-    "home": {
-        "title": "Truquito",
-        "subtitle": "Contador de puntos"
-    }
+  "name": "Truquito",
+  "description": "",
+  "contador_de_puntos": {
+    "title": "Contador de puntos",
+    "description": "Un contador de puntos para jugar rápido un truquito."
+  },
+  "routs": ["/", "/contador-de-puntos"]
 }
