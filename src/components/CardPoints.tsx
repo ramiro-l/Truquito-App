@@ -218,14 +218,14 @@ export default function CardPoints() {
               menu ? "block" : "hidden"
             }  fixed flex  justify-center top-10 bg-primary rounded-3xl max-w-[95vw]  text-secondary`}
           >
-            <ul className="py-2 text-sm flex flex-row">
+            <ul className="p-2 text-sm flex flex-row justify-between">
               <li>
                 <Link
                   href="/"
                   onClick={() => {
                     setMenu(!menu);
                   }}
-                  className="py-1 pt-[10px] block text-center uppercase text-xl rounded-3xl m-2 w-[125px] hover:bg-secondary hover:text-primary"
+                  className="py-1 px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary"
                 >
                   salir
                 </Link>
@@ -236,23 +236,17 @@ export default function CardPoints() {
                     handleRemoveAllPoints();
                     setMenu(!menu);
                   }}
-                  className="py-1 pt-[10px] block text-center uppercase text-xl rounded-3xl m-2 w-[125px] hover:bg-secondary hover:text-primary"
+                  className="py-1 px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary"
                 >
                   Reiniciar
                 </button>
               </li>
               <li>
-                <button className="py-1 pt-[10px] block text-center uppercase text-xl rounded-3xl m-2 w-[125px] hover:bg-secondary hover:text-primary">
+                <button className="py-1 px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl w-[125px] hover:bg-secondary hover:text-primary">
                   <ShareWeb
                     content="Compartir"
                     textTitle={`Compartir la partida de ${content.name}`}
-                    textShare={`
-                    La partida de ${content.name} termino en:
-                    
-                    Ell@s: ${player_2.points} 
-                    Nosotr@s:${player_1.points} 
-
-                    ${content.host}
+                    textShare={`La partida de ${content.name} termino con ell@s ${player_2.points} puntos y nosotr@s ${player_1.points} puntos.
                     `}
                   />
                 </button>
