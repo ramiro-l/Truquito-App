@@ -216,33 +216,36 @@ export default function CardPoints() {
           <div
             className={`${
               menu ? "block" : "hidden"
-            }  fixed flex  justify-center top-10 bg-primary rounded-3xl max-w-[95vw]  text-secondary`}
+            }  fixed flex  justify-center top-10 bg-primary rounded-3xl  text-secondary`}
           >
-            <ul className="p-2 text-sm flex flex-row justify-between">
-              <li>
+            <ul
+              className="p-2 text-sm flex flex-row justify-center 
+             w-[90vw] min-[440px]:w-[400px]"
+            >
+              <li className="w-[100%]">
                 <Link
                   href="/"
                   onClick={() => {
                     setMenu(!menu);
                   }}
-                  className="py-1 px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary"
+                  className="py-1  px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary"
                 >
                   salir
                 </Link>
               </li>
-              <li>
+              <li className="w-[100%]">
                 <button
                   onClick={() => {
                     handleRemoveAllPoints();
                     setMenu(!menu);
                   }}
-                  className="py-1 px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary"
+                  className="py-1 px-2 w-[100%] pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary"
                 >
                   Reiniciar
                 </button>
               </li>
-              <li>
-                <button className="py-1 px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl w-[125px] hover:bg-secondary hover:text-primary">
+              <li className="w-[100%]">
+                <button className="py-1 w-[100%] px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary">
                   <ShareWeb
                     content="Compartir"
                     textTitle={`Compartir la partida de ${content.name}`}
