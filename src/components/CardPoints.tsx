@@ -254,7 +254,7 @@ export default function CardPoints() {
                   <ShareWeb
                     content="Compartir"
                     textTitle={`Compartir la partida de ${content.name}`}
-                    textShare={`La partida de ${content.name} termino con ell@s ${player_2.points} puntos y nosotr@s ${player_1.points} puntos.
+                    textShare={`La partida de ${content.name} termino con ell@s ${player_2.points} puntos y nosotr@s ${player_1.points} puntos. \n
                     `}
                   />
                 </button>
