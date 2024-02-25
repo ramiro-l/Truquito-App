@@ -18,13 +18,3 @@ export enum info_players {
     name_localStorage_player_1 = "db_player_1",
     name_localStorage_player_2 = "db_player_2"
 };
-
-export interface action {
-    name: "add" | "sub",
-    playerId: info_players.id_player_1 | info_players.id_player_2
-}
-
-export enum info_action {
-    max_remember = 30
-};
-
