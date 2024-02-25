@@ -20,6 +20,11 @@ export default function CardPoints() {
   const [menu, setMenu] = useState(false);
 
   useEffect(() => {
+    if (menu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
     /*     const storedPlayer_1 = localStorage.getItem(
       info_players.name_localStorage_player_1
     );
@@ -35,7 +40,7 @@ export default function CardPoints() {
       const data = JSON.parse(storedPlayer_2);
       setPlayer_2(data);
     } */
-  }, [player_1, player_2]);
+  }, [player_1, player_2, menu]);
 
   const handleAddPoint = (
     playerId: info_players.id_player_1 | info_players.id_player_2,
