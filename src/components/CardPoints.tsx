@@ -17,7 +17,7 @@ export default function CardPoints() {
     name: "Ell@s",
   });
 
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   useEffect(() => {
     /*     const storedPlayer_1 = localStorage.getItem(
