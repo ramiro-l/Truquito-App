@@ -113,11 +113,9 @@ export default function CardPoints() {
           <Matchstick15 points={player_1.points} />
         </div>
         <div className="flex flex-col justify-center items-center absolute top-[480px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary p-1 rounded-full text-secondary uppercase">
-          <small className="">b</small>
-          <small className="">u</small>
-          <small className="">e</small>
-          <small className="">n</small>
+          <small className="">m</small>
           <small className="">a</small>
+          <small className="">l</small>
           <small className="">s</small>
         </div>
         <div
@@ -138,9 +136,10 @@ export default function CardPoints() {
           <Matchstick15 points={(player_1.points - 15) as point} />
         </div>
         <div className="flex  flex-col justify-center items-center absolute top-[950px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary p-1 rounded-full text-secondary uppercase">
-          <small className="">m</small>
-          <small className="">a</small>
-          <small className="">l</small>
+          <small className="">b</small>
+          <small className="">u</small>
+          <small className="">e</small>
+          <small className="">n</small>
           <small className="">a</small>
           <small className="">s</small>
         </div>
