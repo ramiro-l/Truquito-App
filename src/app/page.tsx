@@ -16,7 +16,7 @@ export default function Home() {
       <div className="flex flex-col h-[50vh]  justify-center items-center gap-2">
         <div className="flex flex-col gap-2 mt-10">
           <p className="text-center uppercase text-2xl">Utilidades</p>
-          <ButtonLink text="Cotador de puntos" href="/contador-de-puntos" />
+          <ButtonLink text="Contador de puntos" href="/contador-de-puntos" />
         </div>
 
         <div className="flex flex-col gap-2 mt-10">
