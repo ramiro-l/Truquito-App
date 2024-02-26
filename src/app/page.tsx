@@ -25,7 +25,7 @@ export default function Home() {
           <ButtonLink text="Calculadora del envido" href="/" />
         </div>
       </div>
-      <p className="mt-20">
+      <p className="mt-20 text-center">
         Podés contribuir a este proyecto{" "}
         <Link
           className="underline"
