@@ -21,7 +21,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-2 mt-10">
           <p className="text-center uppercase text-2xl">Próximamente</p>
-          <ButtonLink text="Valore de las cartas" href="/" />
+          <ButtonLink text="Valores de las cartas" href="/" />
           <ButtonLink text="Calculadora del envido" href="/" />
         </div>
       </div>
