@@ -1,6 +1,6 @@
 {
   "name": "Truquito",
-  "description": "",
+  "description": "Utilidades para jugar",
   "host": "https://truquito-app.pages.dev/",
   "contador_de_puntos": {
     "title": "Contador de puntos",
