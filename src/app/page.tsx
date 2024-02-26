@@ -29,6 +29,7 @@ export default function Home() {
         Podés contribuir a este proyecto{" "}
         <Link
           className="underline"
+          target="_blank"
           href="https://github.com/ramiro-l/truquito-app"
         >
           en este repositorio
