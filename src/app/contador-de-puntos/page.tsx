@@ -1,4 +1,4 @@
-import CardPoints from "@/components/CardPoints";
+import CardPoints from "./CardPoints";
 import Title from "@/components/ui/title";
 import content from "@/data/content.json";
 import createTitle from "@/tools/createTitle";
