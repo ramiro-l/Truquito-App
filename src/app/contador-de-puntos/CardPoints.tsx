@@ -25,9 +25,13 @@ export default function CardPoints() {
     } else {
       document.body.style.overflow = "auto";
     }
-    /*     const storedPlayer_1 = localStorage.getItem(
+  }, [menu]);
+  
+  useEffect(() => {
+    const storedPlayer_1 = localStorage.getItem(
       info_players.name_localStorage_player_1
     );
+
     if (storedPlayer_1) {
       const data = JSON.parse(storedPlayer_1);
       setPlayer_1(data);
@@ -36,11 +40,12 @@ export default function CardPoints() {
     const storedPlayer_2 = localStorage.getItem(
       info_players.name_localStorage_player_2
     );
+
     if (storedPlayer_2) {
       const data = JSON.parse(storedPlayer_2);
       setPlayer_2(data);
-    } */
-  }, [player_1, player_2, menu]);
+    }
+  }, [])
 
   const handleAddPoint = (
     playerId: info_players.id_player_1 | info_players.id_player_2,
@@ -63,8 +68,10 @@ export default function CardPoints() {
     // Update state
     if (info_players.id_player_1 == playerId) {
       setPlayer_1(newData);
+      localStorage.setItem(info_players.name_localStorage_player_1, JSON.stringify(newData));
     } else {
       setPlayer_2(newData);
+      localStorage.setItem(info_players.name_localStorage_player_2, JSON.stringify(newData));
     }
   };
 
@@ -89,14 +96,18 @@ export default function CardPoints() {
     // Update state
     if (info_players.id_player_1 == playerId) {
       setPlayer_1(newData);
+      localStorage.setItem(info_players.name_localStorage_player_1, JSON.stringify(newData));
     } else {
       setPlayer_2(newData);
+      localStorage.setItem(info_players.name_localStorage_player_2, JSON.stringify(newData));
     }
   };
 
   const handleRemoveAllPoints = () => {
     setPlayer_1({ ...player_1, points: 0 });
     setPlayer_2({ ...player_2, points: 0 });
+    localStorage.removeItem(info_players.name_localStorage_player_1);
+    localStorage.removeItem(info_players.name_localStorage_player_2);
   };
 
   return (
@@ -116,6 +127,7 @@ export default function CardPoints() {
           <small className="">m</small>
           <small className="">a</small>
           <small className="">l</small>
+          <small className="">a</small>
           <small className="">s</small>
         </div>
         <div
