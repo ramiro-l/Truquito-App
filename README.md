@@ -1,6 +1,7 @@
 # Truquito App
 
-This project is a points counter for the Truco Game, developed using Next.js. It allows keeping track of points for two players or more as the game progresses.
+This utilities project for the game Truco, developed with [Next.js](https://nextjs.org/).
+For more information about the game, see [Wikipedia Truco](https://es.wikipedia.org/wiki/Truco_argentino).
 
 ## Collaborate with code
 
