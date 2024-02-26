@@ -4,7 +4,7 @@ import Matchstick15 from "./Matchstick15";
 import { player, info_players, info_points, point } from "@/type";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import ShareWeb from "./ui/shareWeb";
+import ShareWeb from "../../components/ui/shareWeb";
 import content from "@/data/content.json";
 
 export default function CardPoints() {
