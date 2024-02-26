@@ -17,7 +17,7 @@ If you wish to contribute code, please:
 
 - Make sure to follow the existing code **style guidelines**.
 
-- Send a Pull Request to the `develop` branch with a detailed description of the proposed changes and reference the related issue.
+- Send a Pull Request to the `dev` branch with a detailed description of the proposed changes and reference the related issue.
 
 ## Contribute ideas, bugs or feedback 💡
 
