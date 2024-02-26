@@ -10,7 +10,7 @@ export default function ButtonLink({
 }) {
   return (
     <Link href={href}>
-      <button className="border-2 min-w-[200px] border-primary px-4 pt-2 rounded-md active:bg-primary active:text-secondary">
+      <button className="text-secondary w-full uppercase bg-primary min-w-[200px] border-primary px-4 pt-2 rounded-md active:bg-secondary active:text-primary">
         {text}
       </button>
     </Link>
