@@ -1,4 +1,4 @@
-import ButtonLink from "@/components/ui/button";
+import ButtonLink from '@/components/ui/button';
 
 export default function Error404() {
   return (

@@ -1,5 +1,5 @@
-import { useState } from "react";
-import SuccessAlert from "./successAlert";
+import { useState } from 'react';
+import SuccessAlert from './successAlert';
 
 export default function ShareWeb({
   content,
@@ -33,10 +33,10 @@ export default function ShareWeb({
       <div onClick={handleShareWeb}>{content}</div>
       <div
         className={`${
-          alertCopy ? "" : "hidden"
+          alertCopy ? '' : 'hidden'
         } fixed bottom-0 left-5 max-[940px]:left-[35vw] max-[940px]:bottom-20 transition-all ease-in-out duration-150`}
       >
-        <SuccessAlert text={"Copiado en portapapeles."} />
+        <SuccessAlert text={'Copiado en portapapeles.'} />
       </div>
     </>
   );

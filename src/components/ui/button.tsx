@@ -1,5 +1,5 @@
-import { Url } from "next/dist/shared/lib/router/router";
-import Link from "next/link";
+import { Url } from 'next/dist/shared/lib/router/router';
+import Link from 'next/link';
 
 export default function ButtonLink({
   text,

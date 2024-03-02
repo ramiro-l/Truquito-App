@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import Title from "@/components/ui/title";
-import content from "@/data/content.json";
-import ButtonLink from "@/components/ui/button";
-import Link from "next/link";
+import type { Metadata } from 'next';
+import Title from '@/components/ui/title';
+import content from '@/data/content.json';
+import ButtonLink from '@/components/ui/button';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: content.name,
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </div>
       <p className="mt-20">
-        Podés contribuir a este proyecto{" "}
+        Podés contribuir a este proyecto{' '}
         <Link
           className="underline"
           target="_blank"

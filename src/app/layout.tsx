@@ -1,7 +1,7 @@
-import { Grandstander } from "next/font/google";
-import "../styles/globals.css";
+import { Grandstander } from 'next/font/google';
+import '../styles/globals.css';
 
-const font = Grandstander({ subsets: ["latin"] });
+const font = Grandstander({ subsets: ['latin'] });
 
 export default function RootLayout({
   children,
@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={font.className + " text-primary"}>
+      <body className={font.className + ' text-primary'}>
         <main>{children}</main>
       </body>
     </html>

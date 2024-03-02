@@ -1,5 +1,5 @@
-import Matchstick5 from "./Matchstick5";
-import { point } from "@/type";
+import Matchstick5 from './Matchstick5';
+import { point } from '@/type';
 
 export default function Matchstick15({ points }: { points: point }) {
   return (

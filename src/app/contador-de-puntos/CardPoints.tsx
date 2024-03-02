@@ -1,35 +1,35 @@
-"use client";
+'use client';
 
-import Matchstick15 from "./Matchstick15";
-import { player, info_players, info_points, point } from "@/type";
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import ShareWeb from "../../components/ui/shareWeb";
-import content from "@/data/content.json";
+import Matchstick15 from './Matchstick15';
+import { player, info_players, info_points, point } from '@/type';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import ShareWeb from '../../components/ui/shareWeb';
+import content from '@/data/content.json';
 
 export default function CardPoints() {
   const [player_1, setPlayer_1] = useState<player>({
     points: 0,
-    name: "Nosotr@s",
+    name: 'Nosotr@s',
   });
   const [player_2, setPlayer_2] = useState<player>({
     points: 0,
-    name: "Ell@s",
+    name: 'Ell@s',
   });
 
   const [menu, setMenu] = useState(false);
 
   useEffect(() => {
     if (menu) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
     }
   }, [menu]);
-  
+
   useEffect(() => {
     const storedPlayer_1 = localStorage.getItem(
-      info_players.name_localStorage_player_1
+      info_players.name_localStorage_player_1,
     );
 
     if (storedPlayer_1) {
@@ -38,18 +38,18 @@ export default function CardPoints() {
     }
 
     const storedPlayer_2 = localStorage.getItem(
-      info_players.name_localStorage_player_2
+      info_players.name_localStorage_player_2,
     );
 
     if (storedPlayer_2) {
       const data = JSON.parse(storedPlayer_2);
       setPlayer_2(data);
     }
-  }, [])
+  }, []);
 
   const handleAddPoint = (
     playerId: info_players.id_player_1 | info_players.id_player_2,
-    remember: boolean = true
+    remember: boolean = true,
   ) => {
     // Select player
     const lastPoint =
@@ -68,16 +68,22 @@ export default function CardPoints() {
     // Update state
     if (info_players.id_player_1 == playerId) {
       setPlayer_1(newData);
-      localStorage.setItem(info_players.name_localStorage_player_1, JSON.stringify(newData));
+      localStorage.setItem(
+        info_players.name_localStorage_player_1,
+        JSON.stringify(newData),
+      );
     } else {
       setPlayer_2(newData);
-      localStorage.setItem(info_players.name_localStorage_player_2, JSON.stringify(newData));
+      localStorage.setItem(
+        info_players.name_localStorage_player_2,
+        JSON.stringify(newData),
+      );
     }
   };
 
   const handleSubPoint = (
     playerId: info_players.id_player_1 | info_players.id_player_2,
-    remember: boolean = true
+    remember: boolean = true,
   ) => {
     // Select player
     const lastPoint =
@@ -96,10 +102,16 @@ export default function CardPoints() {
     // Update state
     if (info_players.id_player_1 == playerId) {
       setPlayer_1(newData);
-      localStorage.setItem(info_players.name_localStorage_player_1, JSON.stringify(newData));
+      localStorage.setItem(
+        info_players.name_localStorage_player_1,
+        JSON.stringify(newData),
+      );
     } else {
       setPlayer_2(newData);
-      localStorage.setItem(info_players.name_localStorage_player_2, JSON.stringify(newData));
+      localStorage.setItem(
+        info_players.name_localStorage_player_2,
+        JSON.stringify(newData),
+      );
     }
   };
 
@@ -112,14 +124,14 @@ export default function CardPoints() {
 
   return (
     <>
-      {" "}
+      {' '}
       <div className="flex flex-row  select-none mt-5">
         <div
           className="w-full h-full  px-8 hover:cursor-pointer border-r-2 border-primary"
           onClick={() => handleAddPoint(info_players.id_player_1)}
         >
           <p className="text-center font-bold text-2xl border-b-4 border-primary mb-6">
-            {player_1.name ? player_1.name : "Jugador 1"}
+            {player_1.name ? player_1.name : 'Jugador 1'}
           </p>
           <Matchstick15 points={player_1.points} />
         </div>
@@ -135,7 +147,7 @@ export default function CardPoints() {
           onClick={() => handleAddPoint(info_players.id_player_2)}
         >
           <p className="text-center font-bold text-2xl border-b-4 border-primary mb-6">
-            {player_2.name ? player_2.name : "Jugador 2"}
+            {player_2.name ? player_2.name : 'Jugador 2'}
           </p>
           <Matchstick15 points={player_2.points} />
         </div>
@@ -203,7 +215,7 @@ export default function CardPoints() {
               viewBox="0 0 24 24"
               strokeWidth={3}
               stroke="currentColor"
-              className={`w-8 h-8 ${menu ? "hidden" : ""}`}
+              className={`w-8 h-8 ${menu ? 'hidden' : ''}`}
             >
               <path
                 strokeLinecap="round"
@@ -218,7 +230,7 @@ export default function CardPoints() {
               viewBox="0 0 24 24"
               strokeWidth={3}
               stroke="currentColor"
-              className={`w-8 h-8 ${!menu ? "hidden" : ""}`}
+              className={`w-8 h-8 ${!menu ? 'hidden' : ''}`}
             >
               <path
                 strokeLinecap="round"
@@ -229,7 +241,7 @@ export default function CardPoints() {
           </button>
           <div
             className={`${
-              menu ? "block" : "hidden"
+              menu ? 'block' : 'hidden'
             }  fixed flex  justify-center top-10 bg-primary rounded-3xl  text-secondary`}
           >
             <ul
@@ -302,7 +314,7 @@ export default function CardPoints() {
       </div>
       <div
         className={`${
-          menu ? "block" : "hidden"
+          menu ? 'block' : 'hidden'
         } w-screen h-screen fixed top-0 left-0 bg-black opacity-20 z-10`}
         onClick={() => setMenu(!menu)}
       />

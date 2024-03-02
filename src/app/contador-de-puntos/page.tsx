@@ -1,8 +1,8 @@
-import CardPoints from "./CardPoints";
-import Title from "@/components/ui/title";
-import content from "@/data/content.json";
-import createTitle from "@/tools/createTitle";
-import type { Metadata } from "next";
+import CardPoints from './CardPoints';
+import Title from '@/components/ui/title';
+import content from '@/data/content.json';
+import createTitle from '@/tools/createTitle';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: createTitle(content.contador_de_puntos.title),
