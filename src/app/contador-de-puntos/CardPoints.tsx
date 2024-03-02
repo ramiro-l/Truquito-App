@@ -126,7 +126,7 @@ export default function CardPoints() {
     <>
       {' '}
       <div className="flex flex-row  select-none mt-5">
-        <div
+        <button
           className="w-full h-full  px-8 hover:cursor-pointer border-r-2 border-primary"
           onClick={() => handleAddPoint(info_players.id_player_1)}
         >
@@ -134,7 +134,7 @@ export default function CardPoints() {
             {player_1.name ? player_1.name : 'Jugador 1'}
           </p>
           <Matchstick15 points={player_1.points} />
-        </div>
+        </button>
         <div className="flex flex-col justify-center items-center absolute top-[480px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary p-1 rounded-full text-secondary uppercase">
           <small className="">m</small>
           <small className="">a</small>
@@ -142,7 +142,7 @@ export default function CardPoints() {
           <small className="">a</small>
           <small className="">s</small>
         </div>
-        <div
+        <button
           className="w-full h-full  px-8 hover:cursor-pointer border-l-2 border-primary"
           onClick={() => handleAddPoint(info_players.id_player_2)}
         >
@@ -150,15 +150,15 @@ export default function CardPoints() {
             {player_2.name ? player_2.name : 'Jugador 2'}
           </p>
           <Matchstick15 points={player_2.points} />
-        </div>
+        </button>
       </div>
       <div className="flex flex-row  select-none mt-5 mb-12 border-t-4 border-primary pt-4">
-        <div
+        <button
           className="w-full h-full  px-8 hover:cursor-pointer border-r-2 border-primary"
           onClick={() => handleAddPoint(info_players.id_player_1)}
         >
           <Matchstick15 points={(player_1.points - 15) as point} />
-        </div>
+        </button>
         <div className="flex  flex-col justify-center items-center absolute top-[950px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary p-1 rounded-full text-secondary uppercase">
           <small className="">b</small>
           <small className="">u</small>
@@ -167,12 +167,12 @@ export default function CardPoints() {
           <small className="">a</small>
           <small className="">s</small>
         </div>
-        <div
+        <button
           className="w-full h-full  px-8 hover:cursor-pointer border-l-2 border-primary"
           onClick={() => handleAddPoint(info_players.id_player_2)}
         >
           <Matchstick15 points={(player_2.points - 15) as point} />
-        </div>
+        </button>
       </div>
       <div className="fixed bottom-0 flex justify-center items-end gap-10 z-20">
         <div className=" flex z-30 gap-3 justify-center items-center  bg-primary px-10 py-4 rounded-t-[2rem] ">
@@ -312,7 +312,7 @@ export default function CardPoints() {
           </button>
         </div>
       </div>
-      <div
+      <button
         className={`${
           menu ? 'block' : 'hidden'
         } w-screen h-screen fixed top-0 left-0 bg-black opacity-20 z-10`}

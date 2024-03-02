@@ -1,7 +1,11 @@
 import Matchstick5 from './Matchstick5';
 import { point } from '@/type';
 
-export default function Matchstick15({ points }: { points: point }) {
+type Props = {
+  readonly points: point;
+};
+
+export default function Matchstick15({ points }: Props) {
   return (
     <div className="flex flex-col gap-8">
       <Matchstick5 points={points as point} />

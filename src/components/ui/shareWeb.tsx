@@ -1,15 +1,13 @@
 import { useState } from 'react';
 import SuccessAlert from './successAlert';
 
-export default function ShareWeb({
-  content,
-  textTitle,
-  textShare,
-}: {
-  content: string;
-  textTitle: string;
-  textShare: string;
-}) {
+type Props = {
+  readonly content: string;
+  readonly textTitle: string;
+  readonly textShare: string;
+};
+
+export default function ShareWeb({ content, textTitle, textShare }: Props) {
   const [alertCopy, setAlertCopy] = useState(false);
 
   const handleShareWeb = async () => {
@@ -30,7 +28,7 @@ export default function ShareWeb({
 
   return (
     <>
-      <div onClick={handleShareWeb}>{content}</div>
+      <button onClick={handleShareWeb}>{content}</button>
       <div
         className={`${
           alertCopy ? '' : 'hidden'

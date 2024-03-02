@@ -1,6 +1,10 @@
 import { point } from '@/type';
 
-export default function Matchstick5({ points }: { points: point }) {
+type Props = {
+  readonly points: point;
+};
+
+export default function Matchstick5({ points }: Props) {
   const match = {
     1: points >= 1,
     2: points >= 2,
