@@ -1,83 +1,96 @@
-# Truquito App
+## Truquito App
 
-This utilities project for the game Truco, developed with [Next.js](https://nextjs.org/).
-For more information about the game, see [Wikipedia Truco](https://es.wikipedia.org/wiki/Truco_argentino).
+Este proyecto es de utilidades para el juego Truco y está desarrollado con [Next.js](https://nextjs.org/).
+Para obtener más información sobre el juego, consulta [Wikipedia Truco](https://es.wikipedia.org/wiki/Truco_argentino).
 
-## Collaborate with code 🤝💻
+## Comunidad de Discord 🌐
 
-If you wish to contribute code, please:
+Únete a nuestra comunidad en Discord para participar en conversaciones, colaborar en el desarrollo y discutir sobre diferentes aspectos del proyecto.
 
-- **Review the open issues** or **create a new one** explaining the improvement or bug to fix.
+**Enlace de Discord**: [Únete a la Comunidad de TRUQUITO APP](https://discord.gg/QnrVRwhyDA)
 
-- **Make a fork** of the repository.
+No dudes en unirte a los canales que te interesen y participar activamente. 
+¡Esperamos verte allí! 🚀
 
-- Create a new branch for your feature or bug fix.
+## Colabora con código 🤝💻
 
-- Write and **test** your code.
+Si deseas contribuir con código, por favor:
 
-- Make sure to follow the existing code **style guidelines**.
+- **Revisa los issues abiertos** o **crea uno nuevo** explicando la mejora o el error que deseas corregir.
 
-- Check format using **Prettier** and **ESLint**, run `pnpm run check-format` or `pnpm run format` to format your code.
+- **Haz un fork** del repositorio.
 
-- Send a Pull Request to the `dev` branch with a detailed description of the proposed changes and reference the related issue.
+- Crea una nueva rama para tu función o corrección de errores.
 
-## Contribute ideas, bugs or feedback 💡
+- Escribe y **prueba** tu código.
 
-If you have an idea, find a bug or want to give feedback on the project:
+- Asegúrate de seguir las **directrices de estilo** existentes.
 
-- Open a new issue in the repository describing your idea, the bug you found or the feedback you want to share.
-- Be as detailed as possible in the description.
-- If possible, include screenshots or any other resource that can help to better understand your point.
+- Verifica el formato con **Prettier** y **ESLint**, ejecuta `pnpm run check-format` o `pnpm run format` para formatear tu código.
 
-## Conventional Commits 📝
+- Envía una Pull Request a la rama `dev` con una descripción detallada de los cambios propuestos y referencia al problema relacionado.
 
-The commit conventions used in this project are as follows:
+## Contribuye con ideas, errores o comentarios 💡
 
-- **Commit Type**: The commit type provides context about the change made. Some common examples include feat for new features, fix for bug fixes, and docs for documentation changes.
-- **Optional Scope**: The scope provides additional information about the scope of the change, such as the affected module or component
-- **Change Description**: The change description should be brief yet descriptive, providing enough information to understand the purpose of the commit.
+Si tienes una idea, encuentras un error o deseas dar feedback sobre el proyecto:
 
-Example of a commit following these conventions:
+- Abre un nuevo problema en el repositorio describiendo tu idea, el error que encontraste o el feedback que deseas compartir.
+
+- Sé lo más detallado posible en la descripción.
+
+- Si es posible, incluye capturas de pantalla u otros recursos que puedan ayudar a entender mejor tu punto.
+
+## Formato de los Commits 📝
+
+Las convenciones de commit utilizadas en este proyecto son las siguientes:
+
+- **Tipo de Commit**: El tipo de commit proporciona contexto sobre el cambio realizado. Algunos ejemplos comunes incluyen feat para nuevas características, fix para correcciones de errores y docs para cambios en la documentación.
+
+- **Ámbito Opcional**: El ámbito proporciona información adicional sobre el alcance del cambio, como el módulo o componente afectado.
+
+- **Descripción del Cambio**: La descripción del cambio debe ser breve pero descriptiva, proporcionando suficiente información para entender el propósito del commit.
+
+Ejemplo de un commit siguiendo estas convenciones:
 
 ```bash
 feat(login): add email validation
 ```
 
-> [!IMPORTANT]
-> This project adheres to **Conventional Commits** to maintain a clear and consistent history of changes.
+> [!IMPORTANTE]
+> Este proyecto sigue los **Conventional Commits** para mantener un historial claro y consistente de cambios.
 
-For more information on Conventional Commits, please refer to the [official website](https://www.conventionalcommits.org/en/v1.0.0/).  
-Here's [Conventional Commits for VSCode](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits).
+Para obtener más información sobre Commits Convencionales, consulta la [web oficial](https://www.conventionalcommits.org/en/v1.0.0/).  
+Aquí tienes [Conventional Commits para VSCode](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits).
 
-## Installation and Run 🛠️
+## Instalación y Ejecución 🛠️
 
-Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu máquina.
 
-1. Clone this repository:
+1. Clona este repositorio:
 
 ```bash
    git clone https://github.com/ramiro-l/truquito-app.git
 ```
 
-2. Navigate to the project directory:
+2. Navega al directorio del proyecto:
 
 ```bash
    cd truquito-app
 ```
 
-3. Install dependencies:
+3. Instala las dependencias:
 
 ```bash
    pnpm install
 ```
 
-4. Start the application:
+4. Inicia la aplicación:
 
 ```bash
    pnpm run dev
 ```
 
-5. The application will be available at [localhost:3000](http://localhost:3000).
+5. La aplicación estará disponible en [localhost:3000](http://localhost:3000).
 
-> [!NOTE]
-> You can use `npm` or `yarn` instead of `pnpm` if you prefer.
+> [!NOTA]
+> Puedes usar `npm` o `yarn` en lugar de `pnpm` si lo prefieres.
