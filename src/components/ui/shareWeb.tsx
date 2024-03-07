@@ -27,7 +27,10 @@ export default function ShareWeb({ content, textTitle, textShare }: Props) {
   };
 
   return (
-      <button className="uppercase" onClick={handleShareWeb}>{content}</button>
+    <>
+      <button className="uppercase" onClick={handleShareWeb}>
+        {content}
+      </button>
       <div
         className={`${
           alertCopy ? '' : 'hidden'
