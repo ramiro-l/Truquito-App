@@ -175,10 +175,11 @@ export default function CardPoints() {
         </button>
       </div>
       <div className="fixed bottom-0 flex justify-center items-end gap-10 z-20">
-        <div className=" flex z-30 gap-3 justify-center items-center  bg-primary px-10 py-4 rounded-t-[2rem] ">
+        <div className="flex z-30 gap-3 justify-center items-center bg-primary px-10 py-4 rounded-t-[2rem]">
           <button
             className="text-secondary border-secondary text-3xl px-3 pt-1 text-center inline-flex items-center border-2 rounded-full"
             type="button"
+            aria-label="Restar punto a nosotros"
             onClick={() => {
               if (!menu) {
                 handleSubPoint(info_players.id_player_1);
@@ -187,11 +188,12 @@ export default function CardPoints() {
               }
             }}
           >
-            <b className="-mb-1">-</b>
+            <span className="-mb-1 font-bold">-</span>
           </button>
           <button
             className="text-secondary border-secondary text-3xl px-3 pt-1 text-center inline-flex items-center border-2 rounded-full"
             type="button"
+            aria-label="Sumar punto a nosotros"
             onClick={() => {
               if (!menu) {
                 handleAddPoint(info_players.id_player_1);
@@ -200,14 +202,15 @@ export default function CardPoints() {
               }
             }}
           >
-            <b className="-mb-1">+</b>
+            <span className="-mb-1 font-bold">+</span>
           </button>
         </div>
-        <div className="absolute  flex z-20 justify-center items-center  bg-primary pb-5 pt-2">
+        <div className="absolute flex z-20 justify-center items-center  bg-primary pb-5 pt-2">
           <button
             className="text-secondary rounded-lg text-sm px-5 text-center inline-flex items-center "
             type="button"
             onClick={() => setMenu(!menu)}
+            aria-label="Menú"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -271,14 +274,14 @@ export default function CardPoints() {
                 </button>
               </li>
               <li className="w-[100%]">
-                <button className="py-1 w-[100%] px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary">
+                <div className="py-1 w-[100%] px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl hover:bg-secondary hover:text-primary">
                   <ShareWeb
                     content="Compartir"
                     textTitle={`Compartir la partida de ${content.name}`}
                     textShare={`La partida de ${content.name} termino con ell@s ${player_2.points} puntos y nosotr@s ${player_1.points} puntos. \n
                     `}
                   />
-                </button>
+                </div>
               </li>
             </ul>
           </div>
@@ -287,6 +290,7 @@ export default function CardPoints() {
           <button
             className="text-secondary border-secondary text-3xl px-3 pt-1 text-center inline-flex items-center border-2 rounded-full"
             type="button"
+            aria-label="Restar punto a ellos"
             onClick={() => {
               if (!menu) {
                 handleSubPoint(info_players.id_player_2);
@@ -295,11 +299,12 @@ export default function CardPoints() {
               }
             }}
           >
-            <b className="-mb-1">-</b>
+            <span className="-mb-1 font-bold">-</span>
           </button>
           <button
             className="text-secondary border-secondary text-3xl px-3 pt-1 text-center inline-flex items-center border-2 rounded-full"
             type="button"
+            aria-label="Sumar punto a ellos"
             onClick={() => {
               if (!menu) {
                 handleAddPoint(info_players.id_player_2);
@@ -308,7 +313,7 @@ export default function CardPoints() {
               }
             }}
           >
-            <b className="-mb-1">+</b>
+            <span className="-mb-1 font-bold">+</span>
           </button>
         </div>
       </div>
