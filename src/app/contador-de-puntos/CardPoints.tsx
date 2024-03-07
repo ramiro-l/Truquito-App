@@ -247,14 +247,14 @@ export default function CardPoints() {
                 </button>
               </li>
               <li className="w-[100%]">
-                <button className="py-1 w-[100%] px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary">
+                <div className="py-1 w-[100%] px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl hover:bg-secondary hover:text-primary">
                   <ShareWeb
                     content="Compartir"
                     textTitle={`Compartir la partida de ${content.name}`}
                     textShare={`La partida de ${content.name} termino con ell@s ${player_2.points} puntos y nosotr@s ${player_1.points} puntos. \n
                     `}
                   />
-                </button>
+                </div>
               </li>
             </ul>
           </div>
