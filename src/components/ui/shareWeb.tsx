@@ -30,7 +30,7 @@ export default function ShareWeb({
 
   return (
     <>
-      <div onClick={handleShareWeb}>{content}</div>
+      <button className="uppercase" onClick={handleShareWeb}>{content}</button>
       <div
         className={`${
           alertCopy ? "" : "hidden"
