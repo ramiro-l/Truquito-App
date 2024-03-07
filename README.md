@@ -56,7 +56,7 @@ Ejemplo de un commit siguiendo estas convenciones:
 feat(login): add email validation
 ```
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 > Este proyecto sigue los **Conventional Commits** para mantener un historial claro y consistente de cambios.
 
 Para obtener más información sobre Commits Convencionales, consulta la [web oficial](https://www.conventionalcommits.org/en/v1.0.0/).  
@@ -92,5 +92,5 @@ Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu máquina.
 
 5. La aplicación estará disponible en [localhost:3000](http://localhost:3000).
 
-> [!NOTA]
+> [!NOTE]
 > Puedes usar `npm` o `yarn` en lugar de `pnpm` si lo prefieres.
