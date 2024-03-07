@@ -16,6 +16,8 @@ No dudes en unirte a los canales que te interesen y participar activamente.
 
 Si deseas contribuir con código, por favor:
 
+- Primero **unirse** a la comunidad de [Discord](https://discord.gg/QnrVRwhyDA)
+
 - **Revisa los issues abiertos** o **crea uno nuevo** explicando la mejora o el error que deseas corregir.
 
 - **Haz un fork** del repositorio.
