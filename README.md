@@ -16,21 +16,18 @@ No dudes en unirte a los canales que te interesen y participar activamente.
 
 Si deseas contribuir con código, por favor:
 
-- Primero **unirse** a la comunidad de [Discord](https://discord.gg/QnrVRwhyDA)
+1. Haz un [_fork_](https://github.com/ramiro-l/truquito-app/fork) del Proyecto .
+2. Clona tu _fork_ .
+3. Añade el repositorio original como remoto (`git remote add upstream https://github.com/ramiro-l/truquito-app`)
+4. Crea tu Rama de Funcionalidad (`git checkout -b feature/CaracteristicaIncreible`)
+5. Realiza tus cambios y seguí las [convenciones para los commits](https://www.conventionalcommits.org/en/v1.0.0/).
+6. Asegúrate de seguir las **directrices de estilo** existentes.
+7. Haz Push a la Rama (`git push origin feature/CaracteristicaIncreible`)
+8. Abre una [_pull request_](https://github.com/ramiro-l/truquito-app/pulls) a la rama `dev` con una descripción detallada de los cambios propuestos y referencia al problema relacionado.
 
-- **Revisa los issues abiertos** o **crea uno nuevo** explicando la mejora o el error que deseas corregir.
-
-- **Haz un fork** del repositorio.
-
-- Crea una nueva rama para tu función o corrección de errores.
-
-- Escribe y **prueba** tu código.
-
-- Asegúrate de seguir las **directrices de estilo** existentes.
-
-- Verifica el formato con **Prettier** y **ESLint**, ejecuta `pnpm run check-format` o `pnpm run format` para formatear tu código.
-
-- Envía una Pull Request a la rama `dev` con una descripción detallada de los cambios propuestos y referencia al problema relacionado.
+> [!IMPORTANT]
+> 1. **Unirse** a la comunidad de [Discord](https://discord.gg/QnrVRwhyDA)
+> 2. **Revisa los issues abiertos** o **crea uno nuevo** explicando la mejora o el error que deseas corregir.
 
 ## Contribuye con ideas, errores o comentarios 💡
 
