@@ -1,4 +1,8 @@
-export default function SuccessAlert({ text }: { text: string }) {
+type Props = {
+  readonly text: string;
+};
+
+export default function SuccessAlert({ text }: Props) {
   return (
     <div
       className="flex items-center p-4 mb-4 text-sm rounded-lg bg-secondary text-green-400"

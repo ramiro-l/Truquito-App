@@ -1,50 +1,55 @@
-"use client";
+'use client';
 
-import Matchstick15 from "./Matchstick15";
-import { player, info_players, info_points, point } from "@/type";
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import ShareWeb from "../../components/ui/shareWeb";
-import content from "@/data/content.json";
+import Matchstick15 from './Matchstick15';
+import { player, info_players, info_points, point } from '@/type';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import ShareWeb from '../../components/ui/shareWeb';
+import content from '@/data/content.json';
 
 export default function CardPoints() {
   const [player_1, setPlayer_1] = useState<player>({
     points: 0,
-    name: "Nosotr@s",
+    name: 'Nosotr@s',
   });
   const [player_2, setPlayer_2] = useState<player>({
     points: 0,
-    name: "Ell@s",
+    name: 'Ell@s',
   });
 
   const [menu, setMenu] = useState(false);
 
   useEffect(() => {
     if (menu) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
     }
-    /*     const storedPlayer_1 = localStorage.getItem(
-      info_players.name_localStorage_player_1
+  }, [menu]);
+
+  useEffect(() => {
+    const storedPlayer_1 = localStorage.getItem(
+      info_players.name_localStorage_player_1,
     );
+
     if (storedPlayer_1) {
       const data = JSON.parse(storedPlayer_1);
       setPlayer_1(data);
     }
 
     const storedPlayer_2 = localStorage.getItem(
-      info_players.name_localStorage_player_2
+      info_players.name_localStorage_player_2,
     );
+
     if (storedPlayer_2) {
       const data = JSON.parse(storedPlayer_2);
       setPlayer_2(data);
-    } */
-  }, [player_1, player_2, menu]);
+    }
+  }, []);
 
   const handleAddPoint = (
     playerId: info_players.id_player_1 | info_players.id_player_2,
-    remember: boolean = true
+    remember: boolean = true,
   ) => {
     // Select player
     const lastPoint =
@@ -63,14 +68,22 @@ export default function CardPoints() {
     // Update state
     if (info_players.id_player_1 == playerId) {
       setPlayer_1(newData);
+      localStorage.setItem(
+        info_players.name_localStorage_player_1,
+        JSON.stringify(newData),
+      );
     } else {
       setPlayer_2(newData);
+      localStorage.setItem(
+        info_players.name_localStorage_player_2,
+        JSON.stringify(newData),
+      );
     }
   };
 
   const handleSubPoint = (
     playerId: info_players.id_player_1 | info_players.id_player_2,
-    remember: boolean = true
+    remember: boolean = true,
   ) => {
     // Select player
     const lastPoint =
@@ -89,52 +102,63 @@ export default function CardPoints() {
     // Update state
     if (info_players.id_player_1 == playerId) {
       setPlayer_1(newData);
+      localStorage.setItem(
+        info_players.name_localStorage_player_1,
+        JSON.stringify(newData),
+      );
     } else {
       setPlayer_2(newData);
+      localStorage.setItem(
+        info_players.name_localStorage_player_2,
+        JSON.stringify(newData),
+      );
     }
   };
 
   const handleRemoveAllPoints = () => {
     setPlayer_1({ ...player_1, points: 0 });
     setPlayer_2({ ...player_2, points: 0 });
+    localStorage.removeItem(info_players.name_localStorage_player_1);
+    localStorage.removeItem(info_players.name_localStorage_player_2);
   };
 
   return (
     <>
-      {" "}
+      {' '}
       <div className="flex flex-row  select-none mt-5">
-        <div
+        <button
           className="w-full h-full  px-8 hover:cursor-pointer border-r-2 border-primary"
           onClick={() => handleAddPoint(info_players.id_player_1)}
         >
           <p className="text-center font-bold text-2xl border-b-4 border-primary mb-6">
-            {player_1.name ? player_1.name : "Jugador 1"}
+            {player_1.name ? player_1.name : 'Jugador 1'}
           </p>
           <Matchstick15 points={player_1.points} />
-        </div>
+        </button>
         <div className="flex flex-col justify-center items-center absolute top-[480px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary p-1 rounded-full text-secondary uppercase">
           <small className="">m</small>
           <small className="">a</small>
           <small className="">l</small>
+          <small className="">a</small>
           <small className="">s</small>
         </div>
-        <div
+        <button
           className="w-full h-full  px-8 hover:cursor-pointer border-l-2 border-primary"
           onClick={() => handleAddPoint(info_players.id_player_2)}
         >
           <p className="text-center font-bold text-2xl border-b-4 border-primary mb-6">
-            {player_2.name ? player_2.name : "Jugador 2"}
+            {player_2.name ? player_2.name : 'Jugador 2'}
           </p>
           <Matchstick15 points={player_2.points} />
-        </div>
+        </button>
       </div>
       <div className="flex flex-row  select-none mt-5 mb-12 border-t-4 border-primary pt-4">
-        <div
+        <button
           className="w-full h-full  px-8 hover:cursor-pointer border-r-2 border-primary"
           onClick={() => handleAddPoint(info_players.id_player_1)}
         >
           <Matchstick15 points={(player_1.points - 15) as point} />
-        </div>
+        </button>
         <div className="flex  flex-col justify-center items-center absolute top-[950px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary p-1 rounded-full text-secondary uppercase">
           <small className="">b</small>
           <small className="">u</small>
@@ -143,12 +167,12 @@ export default function CardPoints() {
           <small className="">a</small>
           <small className="">s</small>
         </div>
-        <div
+        <button
           className="w-full h-full  px-8 hover:cursor-pointer border-l-2 border-primary"
           onClick={() => handleAddPoint(info_players.id_player_2)}
         >
           <Matchstick15 points={(player_2.points - 15) as point} />
-        </div>
+        </button>
       </div>
       <div className="fixed bottom-0 flex justify-center items-end gap-10 z-20">
         <div className="flex z-30 gap-3 justify-center items-center bg-primary px-10 py-4 rounded-t-[2rem]">
@@ -194,7 +218,7 @@ export default function CardPoints() {
               viewBox="0 0 24 24"
               strokeWidth={3}
               stroke="currentColor"
-              className={`w-8 h-8 ${menu ? "hidden" : ""}`}
+              className={`w-8 h-8 ${menu ? 'hidden' : ''}`}
             >
               <path
                 strokeLinecap="round"
@@ -209,7 +233,7 @@ export default function CardPoints() {
               viewBox="0 0 24 24"
               strokeWidth={3}
               stroke="currentColor"
-              className={`w-8 h-8 ${!menu ? "hidden" : ""}`}
+              className={`w-8 h-8 ${!menu ? 'hidden' : ''}`}
             >
               <path
                 strokeLinecap="round"
@@ -220,7 +244,7 @@ export default function CardPoints() {
           </button>
           <div
             className={`${
-              menu ? "block" : "hidden"
+              menu ? 'block' : 'hidden'
             }  fixed flex  justify-center top-10 bg-primary rounded-3xl  text-secondary`}
           >
             <ul
@@ -293,9 +317,9 @@ export default function CardPoints() {
           </button>
         </div>
       </div>
-      <div
+      <button
         className={`${
-          menu ? "block" : "hidden"
+          menu ? 'block' : 'hidden'
         } w-screen h-screen fixed top-0 left-0 bg-black opacity-20 z-10`}
         onClick={() => setMenu(!menu)}
       />

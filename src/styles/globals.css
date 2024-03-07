@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 body {
-    background:rgba(255, 255, 255, 0.208)  url("./wood-background.svg") no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+  background: rgba(255, 255, 255, 0.208) url('./wood-background.svg') no-repeat
+    center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }

@@ -1,6 +1,10 @@
-import { point } from "@/type";
+import { point } from '@/type';
 
-export default function Matchstick5({ points }: { points: point }) {
+type Props = {
+  readonly points: point;
+};
+
+export default function Matchstick5({ points }: Props) {
   const match = {
     1: points >= 1,
     2: points >= 2,
@@ -13,35 +17,35 @@ export default function Matchstick5({ points }: { points: point }) {
       <img
         src="/assets/matchstick.svg"
         alt="fósforo de puntos"
-        className={`${!match[1] ? "opacity-0" : "opacity-100"}
+        className={`${!match[1] ? 'opacity-0' : 'opacity-100'}
            ml-[5%] h-auto w-[8rem] transition-all ease-in-out duration-100 
           `}
       />
       <img
         src="/assets/matchstick.svg"
         alt="fósforo de puntos"
-        className={`${!match[2] ? "opacity-0" : "opacity-100"}
+        className={`${!match[2] ? 'opacity-0' : 'opacity-100'}
           rotate-90 ml-[50%] mt-[35%] h-auto w-[8rem] transition-all ease-in-out duration-100 
           `}
       />
       <img
         src="/assets/matchstick.svg"
         alt="fósforo de puntos"
-        className={`${!match[3] ? "opacity-0" : "opacity-100"}
+        className={`${!match[3] ? 'opacity-0' : 'opacity-100'}
            -rotate-90 -ml-[50%] -mt-[12%] h-auto w-[8rem] transition-all ease-in-out duration-100
           `}
       />
       <img
         src="/assets/matchstick.svg"
         alt="fósforo de puntos"
-        className={`${!match[4] ? "opacity-0" : "opacity-100"}
+        className={`${!match[4] ? 'opacity-0' : 'opacity-100'}
           rotate-180 mt-[35%] -ml-[5%] h-auto w-[8rem] transition-all ease-in-out duration-100
           `}
       />
       <img
         src="/assets/matchstick.svg"
         alt="fósforo de puntos"
-        className={`${!match[5] ? "opacity-0" : "opacity-100"}
+        className={`${!match[5] ? 'opacity-0' : 'opacity-100'}
           rotate-[40deg] -mt-[58%] h-auto w-[8rem] transition-all ease-in-out duration-100
           `}
       />

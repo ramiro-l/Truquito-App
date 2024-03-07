@@ -1,15 +1,13 @@
-import { useState } from "react";
-import SuccessAlert from "./successAlert";
+import { useState } from 'react';
+import SuccessAlert from './successAlert';
 
-export default function ShareWeb({
-  content,
-  textTitle,
-  textShare,
-}: {
-  content: string;
-  textTitle: string;
-  textShare: string;
-}) {
+type Props = {
+  readonly content: string;
+  readonly textTitle: string;
+  readonly textShare: string;
+};
+
+export default function ShareWeb({ content, textTitle, textShare }: Props) {
   const [alertCopy, setAlertCopy] = useState(false);
 
   const handleShareWeb = async () => {
@@ -29,14 +27,13 @@ export default function ShareWeb({
   };
 
   return (
-    <>
       <button className="uppercase" onClick={handleShareWeb}>{content}</button>
       <div
         className={`${
-          alertCopy ? "" : "hidden"
+          alertCopy ? '' : 'hidden'
         } fixed bottom-0 left-5 max-[940px]:left-[35vw] max-[940px]:bottom-20 transition-all ease-in-out duration-150`}
       >
-        <SuccessAlert text={"Copiado en portapapeles."} />
+        <SuccessAlert text={'Copiado en portapapeles.'} />
       </div>
     </>
   );
