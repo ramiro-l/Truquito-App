@@ -93,3 +93,4 @@ Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu máquina.
 
 > [!NOTE]
 > Puedes usar `npm` o `yarn` en lugar de `pnpm` si lo prefieres.
+> Tener cuidado con husky, esta utilizando `pnpm`.
