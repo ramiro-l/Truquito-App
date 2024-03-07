@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "steoates.autoimport",
+    "vivaxy.vscode-conventional-commits",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-spanish",
+    
+],
+  "unwantedRecommendations": []
+}
