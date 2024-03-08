@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write .",
-    "check-format": "next lint && prettier --check .",
+    "format": "pretty-quick --write .",
+    "check-format": "next lint && pretty-quick --check .",
+    "check-format-and-fix": "next lint && pretty-quick --check --fix",
     "prepare": "husky"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "postcss": "^8",
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.12",
+    "pretty-quick": "^4.0.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
