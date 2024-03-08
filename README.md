@@ -20,7 +20,7 @@ Si deseas contribuir con código, por favor:
 2. Clona tu _fork_ .
 3. Añade el repositorio original como remoto (`git remote add upstream https://github.com/ramiro-l/truquito-app`)
 4. Crea tu Rama de Funcionalidad (`git checkout -b feature/CaracteristicaIncreible`)
-5. Realiza tus cambios y seguí las [convenciones para los commits](https://www.conventionalcommits.org/en/v1.0.0/).
+5. Realiza tus cambios y seguí las [convenciones para los commits](#formato-de-los-commits-📝).
 6. Asegúrate de seguir las **directrices de estilo** existentes.
 7. Haz Push a la Rama (`git push origin feature/CaracteristicaIncreible`)
 8. Abre una [_pull request_](https://github.com/ramiro-l/truquito-app/pulls) a la rama `dev` con una descripción detallada de los cambios propuestos y referencia al problema relacionado.
@@ -59,7 +59,7 @@ feat(login): add email validation
 > [!IMPORTANT]
 > Este proyecto sigue los **Conventional Commits** para mantener un historial claro y consistente de cambios.
 
-Para obtener más información sobre Commits Convencionales, consulta la [web oficial](https://www.conventionalcommits.org/en/v1.0.0/).  
+Para obtener más información sobre Commits Convencionales, consulta la [web oficial](https://www.conventionalcommits.org/es/v1.0.0/).  
 Aquí tienes [Conventional Commits para VSCode](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits).
 
 ## Instalación y Ejecución 🛠️
