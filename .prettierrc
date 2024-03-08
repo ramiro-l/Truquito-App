@@ -3,6 +3,5 @@
   "useTabs": false,
   "semi": true,
   "singleQuote": true,
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "exclude": ["node_modules/", ".husky/"]
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
