@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write .",
+    "format": "pretty-quick --write .",
+    "format-all": "prettier --write .",
     "check-format": "next lint && pretty-quick --check .",
     "check-format-and-fix": "next lint && pretty-quick --check --fix",
     "prepare": "husky"
