@@ -11,16 +11,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex w-[100vw] h-[100vh]  flex-col items-center px-8 py-10">
+    <main className="flex h-[100vh] w-[100vw]  flex-col items-center px-8 py-10">
       <Title title={content.name} subtitle={content.description} />
-      <div className="flex flex-col h-[50vh]  justify-center items-center gap-2">
-        <div className="flex flex-col gap-2 mt-10">
-          <p className="text-center uppercase text-2xl">Utilidades</p>
+      <div className="flex h-[50vh] flex-col  items-center justify-center gap-2">
+        <div className="mt-10 flex flex-col gap-2">
+          <p className="text-center text-2xl uppercase">Utilidades</p>
           <ButtonLink text="Contador de puntos" href="/contador-de-puntos" />
         </div>
 
-        <div className="flex flex-col gap-2 mt-10">
-          <p className="text-center uppercase text-2xl">Próximamente</p>
+        <div className="mt-10 flex flex-col gap-2">
+          <p className="text-center text-2xl uppercase">Próximamente</p>
           <ButtonLink text="Valores de las cartas" href="/" />
           <ButtonLink text="Calculadora del envido" href="/" />
         </div>

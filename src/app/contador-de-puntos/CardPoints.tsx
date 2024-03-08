@@ -125,17 +125,17 @@ export default function CardPoints() {
   return (
     <>
       {' '}
-      <div className="flex flex-row  select-none mt-5">
+      <div className="mt-5 flex  select-none flex-row">
         <button
-          className="w-full h-full  px-8 hover:cursor-pointer border-r-2 border-primary"
+          className="h-full w-full  border-r-2 border-primary px-8 hover:cursor-pointer"
           onClick={() => handleAddPoint(info_players.id_player_1)}
         >
-          <p className="text-center font-bold text-2xl border-b-4 border-primary mb-6">
+          <p className="mb-6 border-b-4 border-primary text-center text-2xl font-bold">
             {player_1.name ? player_1.name : 'Jugador 1'}
           </p>
           <Matchstick15 points={player_1.points} />
         </button>
-        <div className="flex flex-col justify-center items-center absolute top-[480px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary p-1 rounded-full text-secondary uppercase">
+        <div className="absolute left-1/2 top-[480px] flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-primary p-1 uppercase text-secondary">
           <small className="">m</small>
           <small className="">a</small>
           <small className="">l</small>
@@ -143,23 +143,23 @@ export default function CardPoints() {
           <small className="">s</small>
         </div>
         <button
-          className="w-full h-full  px-8 hover:cursor-pointer border-l-2 border-primary"
+          className="h-full w-full  border-l-2 border-primary px-8 hover:cursor-pointer"
           onClick={() => handleAddPoint(info_players.id_player_2)}
         >
-          <p className="text-center font-bold text-2xl border-b-4 border-primary mb-6">
+          <p className="mb-6 border-b-4 border-primary text-center text-2xl font-bold">
             {player_2.name ? player_2.name : 'Jugador 2'}
           </p>
           <Matchstick15 points={player_2.points} />
         </button>
       </div>
-      <div className="flex flex-row  select-none mt-5 mb-12 border-t-4 border-primary pt-4">
+      <div className="mb-12 mt-5  flex select-none flex-row border-t-4 border-primary pt-4">
         <button
-          className="w-full h-full  px-8 hover:cursor-pointer border-r-2 border-primary"
+          className="h-full w-full  border-r-2 border-primary px-8 hover:cursor-pointer"
           onClick={() => handleAddPoint(info_players.id_player_1)}
         >
           <Matchstick15 points={(player_1.points - 15) as point} />
         </button>
-        <div className="flex  flex-col justify-center items-center absolute top-[950px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary p-1 rounded-full text-secondary uppercase">
+        <div className="absolute  left-1/2 top-[950px] flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-primary p-1 uppercase text-secondary">
           <small className="">b</small>
           <small className="">u</small>
           <small className="">e</small>
@@ -168,16 +168,16 @@ export default function CardPoints() {
           <small className="">s</small>
         </div>
         <button
-          className="w-full h-full  px-8 hover:cursor-pointer border-l-2 border-primary"
+          className="h-full w-full  border-l-2 border-primary px-8 hover:cursor-pointer"
           onClick={() => handleAddPoint(info_players.id_player_2)}
         >
           <Matchstick15 points={(player_2.points - 15) as point} />
         </button>
       </div>
-      <div className="fixed bottom-0 flex justify-center items-end gap-10 z-20">
-        <div className="flex z-30 gap-3 justify-center items-center bg-primary px-10 py-4 rounded-t-[2rem]">
+      <div className="fixed bottom-0 z-20 flex items-end justify-center gap-10">
+        <div className="z-30 flex items-center justify-center gap-3 rounded-t-[2rem] bg-primary px-10 py-4">
           <button
-            className="text-secondary border-secondary text-3xl px-3 pt-1 text-center inline-flex items-center border-2 rounded-full"
+            className="inline-flex items-center rounded-full border-2 border-secondary px-3 pt-1 text-center text-3xl text-secondary"
             type="button"
             aria-label="Restar punto a nosotros"
             onClick={() => {
@@ -191,7 +191,7 @@ export default function CardPoints() {
             <span className="-mb-1 font-bold">-</span>
           </button>
           <button
-            className="text-secondary border-secondary text-3xl px-3 pt-1 text-center inline-flex items-center border-2 rounded-full"
+            className="inline-flex items-center rounded-full border-2 border-secondary px-3 pt-1 text-center text-3xl text-secondary"
             type="button"
             aria-label="Sumar punto a nosotros"
             onClick={() => {
@@ -205,9 +205,9 @@ export default function CardPoints() {
             <span className="-mb-1 font-bold">+</span>
           </button>
         </div>
-        <div className="absolute flex z-20 justify-center items-center  bg-primary pb-5 pt-2">
+        <div className="absolute z-20 flex items-center justify-center  bg-primary pb-5 pt-2">
           <button
-            className="text-secondary rounded-lg text-sm px-5 text-center inline-flex items-center "
+            className="inline-flex items-center rounded-lg px-5 text-center text-sm text-secondary "
             type="button"
             onClick={() => setMenu(!menu)}
             aria-label="Menú"
@@ -218,7 +218,7 @@ export default function CardPoints() {
               viewBox="0 0 24 24"
               strokeWidth={3}
               stroke="currentColor"
-              className={`w-8 h-8 ${menu ? 'hidden' : ''}`}
+              className={`h-8 w-8 ${menu ? 'hidden' : ''}`}
             >
               <path
                 strokeLinecap="round"
@@ -233,7 +233,7 @@ export default function CardPoints() {
               viewBox="0 0 24 24"
               strokeWidth={3}
               stroke="currentColor"
-              className={`w-8 h-8 ${!menu ? 'hidden' : ''}`}
+              className={`h-8 w-8 ${!menu ? 'hidden' : ''}`}
             >
               <path
                 strokeLinecap="round"
@@ -245,11 +245,11 @@ export default function CardPoints() {
           <div
             className={`${
               menu ? 'block' : 'hidden'
-            }  fixed flex  justify-center top-10 bg-primary rounded-3xl  text-secondary`}
+            }  fixed top-10  flex justify-center rounded-3xl bg-primary  text-secondary`}
           >
             <ul
-              className="p-2 text-sm flex flex-row justify-center 
-             w-[90vw] min-[440px]:w-[400px]"
+              className="flex w-[90vw] flex-row justify-center p-2 
+             text-sm min-[440px]:w-[400px]"
             >
               <li className="w-[100%]">
                 <Link
@@ -257,7 +257,7 @@ export default function CardPoints() {
                   onClick={() => {
                     setMenu(!menu);
                   }}
-                  className="py-1  px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary"
+                  className="block  rounded-3xl px-2 py-1 pt-[10px] text-center text-xl uppercase  hover:bg-secondary hover:text-primary"
                 >
                   salir
                 </Link>
@@ -268,13 +268,13 @@ export default function CardPoints() {
                     handleRemoveAllPoints();
                     setMenu(!menu);
                   }}
-                  className="py-1 px-2 w-[100%] pt-[10px] block text-center uppercase text-xl rounded-3xl  hover:bg-secondary hover:text-primary"
+                  className="block w-[100%] rounded-3xl px-2 py-1 pt-[10px] text-center text-xl uppercase  hover:bg-secondary hover:text-primary"
                 >
                   Reiniciar
                 </button>
               </li>
               <li className="w-[100%]">
-                <div className="py-1 w-[100%] px-2 pt-[10px] block text-center uppercase text-xl rounded-3xl hover:bg-secondary hover:text-primary">
+                <div className="block w-[100%] rounded-3xl px-2 py-1 pt-[10px] text-center text-xl uppercase hover:bg-secondary hover:text-primary">
                   <ShareWeb
                     content="Compartir"
                     textTitle={`Compartir la partida de ${content.name}`}
@@ -286,9 +286,9 @@ export default function CardPoints() {
             </ul>
           </div>
         </div>
-        <div className=" flex z-30 gap-3 justify-center items-center  bg-primary px-10 py-4 rounded-t-[2rem] ">
+        <div className=" z-30 flex items-center justify-center gap-3  rounded-t-[2rem] bg-primary px-10 py-4 ">
           <button
-            className="text-secondary border-secondary text-3xl px-3 pt-1 text-center inline-flex items-center border-2 rounded-full"
+            className="inline-flex items-center rounded-full border-2 border-secondary px-3 pt-1 text-center text-3xl text-secondary"
             type="button"
             aria-label="Restar punto a ellos"
             onClick={() => {
@@ -302,7 +302,7 @@ export default function CardPoints() {
             <span className="-mb-1 font-bold">-</span>
           </button>
           <button
-            className="text-secondary border-secondary text-3xl px-3 pt-1 text-center inline-flex items-center border-2 rounded-full"
+            className="inline-flex items-center rounded-full border-2 border-secondary px-3 pt-1 text-center text-3xl text-secondary"
             type="button"
             aria-label="Sumar punto a ellos"
             onClick={() => {
@@ -320,7 +320,7 @@ export default function CardPoints() {
       <button
         className={`${
           menu ? 'block' : 'hidden'
-        } w-screen h-screen fixed top-0 left-0 bg-black opacity-20 z-10`}
+        } fixed left-0 top-0 z-10 h-screen w-screen bg-black opacity-20`}
         onClick={() => setMenu(!menu)}
       />
     </>

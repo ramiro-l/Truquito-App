@@ -9,7 +9,7 @@ type Props = {
 export default function ButtonLink({ text, href }: Props) {
   return (
     <Link href={href}>
-      <button className="text-secondary w-full uppercase bg-primary min-w-[200px] border-primary px-4 pt-2 rounded-md active:bg-secondary active:text-primary">
+      <button className="w-full min-w-[200px] rounded-md border-primary bg-primary px-4 pt-2 uppercase text-secondary active:bg-secondary active:text-primary">
         {text}
       </button>
     </Link>

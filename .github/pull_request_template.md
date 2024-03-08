@@ -1,13 +1,11 @@
-<!-- 
+<!--
     IMPORTANTE LEER:
-    - Si hay campos que no puedes rellenar puedes borrarlos. 
+    - Si hay campos que no puedes rellenar puedes borrarlos.
     - Trata de llenar los que dicen (IMPORTANTE)
     - Las preguntas se completan agregándole una [x] en caso de SI o una [ ] en caso de NO.
 
     OBSERVACIÓN: Lo que se encuentra entre < !-- -- > no aparece al subir.
 -->
-
-
 
 ## Descripción <!-- IMPORTANTE -->
 

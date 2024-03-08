@@ -34,7 +34,7 @@ export default function ShareWeb({ content, textTitle, textShare }: Props) {
       <div
         className={`${
           alertCopy ? '' : 'hidden'
-        } fixed bottom-0 left-5 max-[940px]:left-[35vw] max-[940px]:bottom-20 transition-all ease-in-out duration-150`}
+        } fixed bottom-0 left-5 transition-all duration-150 ease-in-out max-[940px]:bottom-20 max-[940px]:left-[35vw]`}
       >
         <SuccessAlert text={'Copiado en portapapeles.'} />
       </div>

@@ -5,11 +5,11 @@ type Props = {
 export default function SuccessAlert({ text }: Props) {
   return (
     <div
-      className="flex items-center p-4 mb-4 text-sm rounded-lg bg-secondary text-green-400"
+      className="mb-4 flex items-center rounded-lg bg-secondary p-4 text-sm text-green-400"
       role="alert"
     >
       <svg
-        className="flex-shrink-0 inline w-4 h-4 me-3"
+        className="me-3 inline h-4 w-4 flex-shrink-0"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
