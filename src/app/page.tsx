@@ -18,6 +18,10 @@ export default function Home() {
           <p className="text-center text-2xl uppercase">Utilidades</p>
           <ButtonLink text="Contador de puntos" href="/contador-de-puntos" />
         </div>
+        <div className="flex flex-col gap-2 mt-10">
+          <p className="text-center uppercase text-2xl">Jugar</p>
+          <ButtonLink text="Nueva partida" href="/nueva-partida" />
+        </div>        
 
         <div className="mt-10 flex flex-col gap-2">
           <p className="text-center text-2xl uppercase">Próximamente</p>

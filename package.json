@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "format": "pretty-quick --write .",
     "format-all": "prettier --write .",
     "check-format": "next lint && pretty-quick --check .",
@@ -32,6 +32,9 @@
     "prettier-plugin-tailwindcss": "0.5.12",
     "pretty-quick": "4.0.0",
     "tailwindcss": "3.3.0",
-    "typescript": "5"
+    "typescript": "5",
+    "@types/socket.io-client": "^3.0.0",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4"
   }
 }
